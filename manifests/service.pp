@@ -1,4 +1,4 @@
-class fail2ban::service {
+class ntp::service {
 	service {
 		"ntp" :
 			ensure => running,
@@ -6,5 +6,5 @@ class fail2ban::service {
 			hasstatus => true,
 			hasrestart => true,
 	}
-	Class['ntp::install'] ~> Class['fail2ban::service']
+	Class['ntp::install'] ~> Class['ntp::service']
 }

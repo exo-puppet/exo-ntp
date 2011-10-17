@@ -1,3 +1,3 @@
-class fail2ban {
+class ntp {
 	include ntp::install, ntp::service
 }

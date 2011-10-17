@@ -1,4 +1,4 @@
-class fail2ban::install {
+class ntp::install {
 	package {
 		"ntp" :
 			ensure => present,
