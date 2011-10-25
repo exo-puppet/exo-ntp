@@ -1,0 +1,4 @@
+module: puppetlabs/ntp
+version: 0.0.3
+url: file:///Users/arnaud/.puppet/var/puppet-module/cache/http_forge_puppetlabs_com-75a31f1d6f1ef6eb63b4479b3512ee1508209a7f/puppetlabs-ntp-0.0.3.tar.gz
+installed: Tue Oct 25 15:07:36 +0200 2011
