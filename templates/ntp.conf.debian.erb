@@ -20,10 +20,11 @@ filegen clockstats file clockstats type day enable
 # pool: <http://www.pool.ntp.org/join.html>
 
 # Managed by puppet class { "ntp": servers => [ ... ] }
-<% servers_real.each do |server| -%>
+
+<% scope.lookupvar('ntp::params::servers').each do |server| -%>
 server <%= server %>
 <% end -%>
-
+  
 # Access control configuration; see /usr/share/doc/ntp-doc/html/accopt.html for
 # details.  The web page <http://support.ntp.org/bin/view/Support/AccessRestrictions>
 # might also be helpful.
