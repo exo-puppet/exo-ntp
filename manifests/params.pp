@@ -18,7 +18,7 @@ class ntp::params {
 			$service_name		= "ntp"
 			$config_template	= "ntp.conf.debian.erb"
 			$servers 			= $ntp::servers ? {
-				"UNSET" => [ "0.debian.pool.ntp.org iburst dynamic", "1.debian.pool.ntp.org iburst dynamic", "2.debian.pool.ntp.org iburst dynamic", "3.debian.pool.ntp.org iburst dynamic", ], 
+				"UNSET" => [ "0.debian.pool.ntp.org iburst", "1.debian.pool.ntp.org iburst", "2.debian.pool.ntp.org iburst", "3.debian.pool.ntp.org iburst", ], 
 				default => $ntp::servers
 			}
 		}
