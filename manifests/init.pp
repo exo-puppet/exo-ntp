@@ -27,7 +27,7 @@
 #
 #   class { "ntp":
 #       servers     => [ "time.apple.com" ],
-#       lastversion => false,
+#       lastversion => true,
 #   }
 #
 ################################################################################
